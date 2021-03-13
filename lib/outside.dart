@@ -7,14 +7,21 @@ class Output extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width:double.infinity ,
-      child: RaisedButton(
-        color: Colors.blueAccent,
-        textColor: Colors.black54,
+      child: ElevatedButton(
+        style: ButtonStyle(
+       backgroundColor: MaterialStateProperty.all(Colors.yellow),
+       
+        ),
+        
         child: Text(
           reedit,
+          style: TextStyle(color: Colors.deepPurple),
+          
         ),
         onPressed: print),
       
     );
   }
+
+  //void buildColor() => color;
 }
